@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>IA JS API</title>
+<style>
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #111;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #00aa00;
+    color: white;
+    border: none;
+}
+
+.small {
+    font-size: 12px;
+    cursor: pointer;
+    color: #00aaff;
+}
+</style>
+</head>
+<body>
+
+<h1>Fazer conta para a API</h1>
+
+<form action="/criar_conta" method="post">
+<input name="username" placeholder="Username" required><br>
+<input name="senha" type="password" placeholder="Senha" required><br>
+<button type="submit">Criar Conta</button>
+</form>
+
+<p class="small" onclick="mostrarLogin()">Entrar em conta existente</p>
+
+<div id="login" style="display:none;">
+<h2>Entrar em conta existente</h2>
+<form action="/login" method="post">
+<input name="username" placeholder="Nome de usuário"><br>
+<input name="senha" type="password" placeholder="Senha"><br>
+<button type="submit">Entrar</button>
+</form>
+</div>
+
+<hr>
+
+<h2>Criar API Key</h2>
+<form action="/criar_api" method="post">
+<input name="nome" placeholder="Nome (opcional)"><br>
+<button type="submit">Criar API Key</button>
+</form>
+
+<p><a href="/suas_apis" style="color:yellow;">API Keys</a></p>
+
+<script>
+function mostrarLogin(){
+document.getElementById("login").style.display="block";
+}
+</script>
+
+</body>
+</html>low;">API Keys</a></p>
+
+<script>
+function mostrarLogin(){
+document.getElementById("login").style.display="block";
+document.getElementById("gmail").style.display="none";
+}
+function mostrarGmail(){
+document.getElementById("gmail").style.display="block";
+document.getElementById("login").style.display="none";
+}
+</script>
+
+</body>
+</html>
