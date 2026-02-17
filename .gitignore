@@ -1,0 +1,10 @@
+# ignore local secrets & generated files
+usuarios/
+apis_criadas/
+cookies.txt
+__pycache__/
+*.pyc
+.env
+*.log
+.vscode/
+.DS_Store
